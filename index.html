@@ -1,0 +1,42 @@
+
+<!DOCTYPE html><html class="is-web"><head><meta charSet="utf-8"/><title>Refined ChatGPT UI with amazing features - ChatKit</title><meta name="robots" content="index,follow"/><meta name="description" content="Refined ChatGPT UI with amazing features"/><meta name="twitter:card" content="summary_large_image"/><meta property="og:title" content="ChatKit"/><meta property="og:description" content="Refined ChatGPT UI with amazing features"/><meta property="og:image" content="https://chatkit.app/og.png"/><meta property="og:site_name" content="ChatKit"/><meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/><meta name="next-head-count" content="10"/><link rel="icon" type="image/png" href="/favicon.png?v=2"/><link rel="manifest" href="/manifest.json"/><meta name="theme-color" content="#27272a" media="(prefers-color-scheme: dark)"/><script type="text/javascript">
+    function switchAppTheme() {
+      const theme = localStorage.getItem('theme') || 'system'
+      const root = document.documentElement
+      const themeColorEl = document.querySelector('meta[name="theme-color"]')
+      if (theme === 'dark')  {
+        root.classList.add('dark')
+        if (themeColorEl) {
+          themeColorEl.setAttribute('content', '#27272a')
+          themeColorEl.removeAttribute('media')
+        }
+      } else if (theme === 'light') {
+        root.classList.remove('dark')
+        if (themeColorEl) {
+          themeColorEl.setAttribute('content', '#ffffff')
+          themeColorEl.removeAttribute('media')
+        }
+      } else if (theme === 'system') {
+        const matches = window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (matches) {
+          root.classList.add('dark')
+        } else {
+          root.classList.remove('dark')
+        }
+        if (themeColorEl) {
+          themeColorEl.setAttribute('content', '#27272a')
+          themeColorEl.setAttribute('media', '(prefers-color-scheme: dark)')
+        }
+      }
+    }
+    
+    function initSidebarWidth() {
+      const sidebarWidth = localStorage.getItem('sidebarWidth')
+      if (sidebarWidth) {
+        document.documentElement.style.setProperty('--sidebar-width', sidebarWidth)
+      }
+    }
+    
+    switchAppTheme();
+    initSidebarWidth();
+    </script><link data-next-font="" rel="preconnect" href="/" crossorigin="anonymous"/><link rel="preload" href="/_next/static/css/c2e3cd95302170a7.css" as="style" crossorigin=""/><link rel="stylesheet" href="/_next/static/css/c2e3cd95302170a7.css" crossorigin="" data-n-g=""/><link rel="preload" href="/_next/static/css/5cc48654bc1dd811.css" as="style" crossorigin=""/><link rel="stylesheet" href="/_next/static/css/5cc48654bc1dd811.css" crossorigin="" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" crossorigin="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-80d137fd7deda522.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/framework-89fb71a19285d363.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/main-e378111debad3ac7.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/pages/_app-01336b057a0e4c63.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/57beb80f-8434606e91a0dff5.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/dce46a15-ebf614dfe8491308.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/5544-277c90a3e75762b2.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/2729-6c8c279dbae8f65a.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/7855-f0b8adffa7b12f64.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/2117-81357319758d48ed.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/863-6a650d9752914420.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/2455-994c9138282e5011.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/2159-935f91715b69900a.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/3924-5e56840ccd89559c.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/4985-5ecb12422254db29.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/3825-86d007d9c2fc6308.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/3327-cb620360cc7edf8b.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/6372-a5168a031da99534.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/4204-cba78b65d804aba9.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/7327-6e503a2f705f66cb.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/3329-7e4262d202496395.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/pages/index-47a5023c9781dca1.js" defer="" crossorigin=""></script><script src="/_next/static/3g7aEqGdw-c0uyw49-1Jo/_buildManifest.js" defer="" crossorigin=""></script><script src="/_next/static/3g7aEqGdw-c0uyw49-1Jo/_ssgManifest.js" defer="" crossorigin=""></script></head><body><div id="__next"><div style="position:fixed;z-index:9999;top:16px;left:16px;right:16px;bottom:16px;pointer-events:none" class="react-hot-toast"></div></div><script id="__NEXT_DATA__" type="application/json" crossorigin="">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"3g7aEqGdw-c0uyw49-1Jo","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script></body></html>
